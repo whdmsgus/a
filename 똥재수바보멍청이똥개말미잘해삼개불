@@ -1,0 +1,53 @@
+/*void draw(){
+  println("I'm drawing");
+  println(frameCount);
+}
+
+void setup(){
+  println("I'm starting");
+}
+
+void draw(){
+  println("I'm running");
+}
+
+int x=280;
+int y=-100;
+int diameter=380;
+void setup(){
+  size(480,120);
+  fill(102);
+  background(204);
+}
+void draw(){
+  background(204);
+  ellipse(x,y,diameter)
+}*/
+
+float x,y,px,py;
+float easing=0.99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+void setup(){
+  size(555,555);
+}
+
+/*void draw(){
+  float targetX=mouseX;
+  float targetY=mouseY;
+  x+=(targetX-x)*easing;
+  y+=(targetY-y)*easing;
+  ellipse(x,40,12,12);
+  println(targetX+":"+x);
+}*/
+
+void draw(){
+  background(204);
+  stroke(255);
+  line(40,0,70,height);
+  if(mousePressed==true){
+    stroke(0);
+  }
+  else{
+    stroke(255);
+  }
+  line(0,70,width,50);
+}
